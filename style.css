@@ -1,0 +1,120 @@
+body{
+  background-color: #081526;
+  color: skyblue;
+  text-align: center;
+  border:none;
+  margin:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  padding: 40px;
+}
+h1{
+  color: #8EC5FF;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+p{
+  font-size:30px;
+  margin-bottom: 30px;
+}
+button{
+  background-color: #6ea8ff;
+  color: #081526;
+  border: none;
+  padding: 12px 28px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover{
+  background-color: #9cc9ff;
+   transform: scale(1.1);
+}
+.flower{
+  position: fixed;
+  width: 120px;
+  opacity: 0.25;
+  z-index: -1;
+  animation: float 6s ease-in-out infinite;
+}
+@keyframes float{
+  0%{transform:translateY(0px);
+}
+50%{transform:translateY(-10px);
+}
+100%{transform:translateY(0px);
+}
+}
+.flower-left{
+  top: 20px;
+  left: 20px;
+}
+.flower-right{
+  bottom: 20px;
+  right: 5px;
+}
+.petal{
+  position:fixed;
+  top:-50px;
+  left:50%;
+  width:80px;
+height: auto;
+  animation: falls 2s linear infinite;
+
+  display: none;
+}
+.petal1{
+  left:35%;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+.petal2{
+  left:45%;
+  animation-duration: 3s;
+  animation-delay:1s;
+}
+.petal3{
+  left:65%;
+  animation-duration: 4s;
+  animation-delay: 1.5s;
+}
+.petal4{
+  left:25%;
+  animation-duration: 3.5s;
+  animation-delay: 0.5;
+}
+.petal5{
+  left:75%;
+  animation-duration:3s;
+  animation-delay: 0.5;
+}
+.petal6{
+  left: 15%;
+  animation-duration: 3s;
+  animation-delay:1s ;
+}
+.petal7{
+  left: 5%;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+}
+@keyframes falls{
+  0%{transform: translateY(0px);
+  opacity: 0;
+  }
+  5%{transform: translateY(0px);
+     opacity: 1;
+    }
+  50%{transform: translate(25px,400px);
+     opacity: 1;
+     }
+  100%{transform: translate(-30px,800px);
+  opacity: 0;
+}
+}
